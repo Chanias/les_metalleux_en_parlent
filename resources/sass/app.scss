@@ -6,3 +6,53 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+  /************************************MON CSS*****************************************************************/
+  #welcome{
+    color:#ffffff;
+    font-size: 1em;
+    background-image:url('https://ns328286.ip-37-187-113.eu/ew/wallpapers/800x480/04476_800x480.jpg'); 
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding: 20%;
+    margin-left: 10%;
+    
+  }
+  h2{
+      text-align: center;
+      margin:  2em 2em 1em;
+  }
+  h2::after{
+    display: block;
+      height: 2px;
+      background-color: #198754;
+      width: 100px;
+      content: '';
+      margin: 0 auto;
+      margin-top: 10px;
+  }
+  body, .card {
+    margin: 0;
+    background-color: #1a202c;
+    color: #edf2f7;
+}
+#form-message{
+    box-shadow:0 0 10px  #edf2f7;
+    padding-bottom: 10%;
+}
+#corps-body{
+    box-shadow:0 0 10px  #edf2f7;
+    padding-bottom: 2em;
+}
+
+#image{
+  width: 10%;
+  
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0.3);
+}
+footer{
+    background-color: #1a202c;
+}
+/************************************FIN DE MON CSS*****************************************************************/

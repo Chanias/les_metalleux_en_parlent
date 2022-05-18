@@ -13,11 +13,11 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('message', function (Blueprint $table) {
+        Schema::create('messages', function (Blueprint $table) {
             $table->id();
             $table->text('content');
             $table->string('image')->nullable();
-            $table->string('tags');
+            $table->string('tags')->nullable();
             $table->timestamps();
 
             $table->foreignId('user_id')->constrained();
@@ -31,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('message');
+        Schema::dropIfExists('messages');
     }
 };

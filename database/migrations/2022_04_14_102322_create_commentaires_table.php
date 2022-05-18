@@ -17,10 +17,10 @@ return new class extends Migration
             $table->id();
             $table->text('content');
             $table->string('image')->nullable();
-            $table->string('tags');
+            $table->string('tags')->nullable();
             $table->timestamps();
 
-            $table->foreignId('message_id')->constrained();
+            $table->foreignId('message_id')->constrained()->onDelete('cascade'); // on supprime un message et tous ses commentaires
             $table->foreignId('user_id')->constrained();
         });
     }
